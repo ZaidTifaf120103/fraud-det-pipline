@@ -11,9 +11,9 @@ blob_service_client = BlobServiceClient.from_connection_string(connection_string
 
 # Conteneur et fichier
 container_name = "datasets"
-blob_name = "fraudTrain.csv"
-local_file_path = r"C:\Users\zaid2\Desktop\fraud-detection-pipeline\fraud-detection-pipeline\data\raw\fraudTrain.csv"
-
+blob_name = "fraudTrain_prepared.csv"
+#local_file_path = r"C:\Users\zaid2\Desktop\fraud-det-pipline\data\raw\fraudTrain.csv"
+local_file_path = r"C:\Users\zaid2\Desktop\fraud-det-pipline\data\processed\fraudTrain_processed.csv"
 # Téléchargement du fichier
 blob_client = blob_service_client.get_blob_client(container=container_name, blob=blob_name)
 
